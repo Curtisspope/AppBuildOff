@@ -25,6 +25,7 @@ func qsrt ( _ arr:[Int]) ->[Int] {
             less.append(arr[num])
         }
     }
+    
     //recursion
     finalArray.append(contentsOf:qsrt(less))
     finalArray.append(pivot)
@@ -32,6 +33,7 @@ func qsrt ( _ arr:[Int]) ->[Int] {
     
     return finalArray
 }
+
 
 //Test
 print(qsrt([3,110,5,12,44,44,44,44,-2,1,4,7,24567880,8,9,-22334234234,43,5,-89,2,3333,90,34,53,2,3]))
